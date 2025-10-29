@@ -32,9 +32,10 @@ h2 {
 }
 
 .button-group {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
+    display: flex;         /* Membuat tombol sejajar */
+    justify-content: center; /* Menengahkan tombol */
+    gap: 15px;             /* Memberi jarak 15px antar tombol */
+    margin-top: 20px;
 }
 
 button {
@@ -59,8 +60,7 @@ button {
 #noBtn {
     background-color: #f44336; /* Merah */
     color: white;
-    /* Ini adalah bagian PENTING agar JS bisa menggerakkannya */
-    position: absolute; 
+    /* Ini adalah bagian PENTING agar JS bisa menggerakkannya */ 
     transition: left 0.3s ease, top 0.3s ease; /* Transisi agar mulus */
 }
 

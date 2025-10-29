@@ -14,13 +14,13 @@ const gifResult = document.getElementById("gifResult");
 
 // 1. Kita buat satu fungsi khusus untuk memindahkan tombol
 const moveNoButton = () => {
-  // Ambil ukuran kontainer pertanyaan
-  // Kita kurangi lebar/tinggi tombol agar tidak keluar layar
+  noBtn.style.position = 'absolute'; // <-- TAMBAKAN BARIS INI
+
+  // Ambil ukuran kontainer
   const containerWidth = questionContainer.offsetWidth;
   const containerHeight = questionContainer.offsetHeight;
-  const btnWidth = noBtn.offsetWidth;
-  const btnHeight = noBtn.offsetHeight;
-
+  // ...dst
+  
   const newX = Math.floor(Math.random() * (containerWidth - btnWidth));
   const newY = Math.floor(Math.random() * (containerHeight - btnHeight));
   
