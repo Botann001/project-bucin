@@ -84,12 +84,13 @@ button {
 #noBtn {
     background-color: #f44336; /* Merah */
     color: white;
-    box-shadow: 0 4px 12px rgba(244, 67, 54, 0.25);
-    /* Transisi agar pergerakan mulus saat menghindar */
-    transition: left 0.25s ease, top 0.25s ease, background-color 0.2s ease;
+    box-shadow: 0 4px 14px rgba(244, 67, 54, 0.35);
+    /* Transisi cepat dan mulus saat meluncur ke seluruh layar */
+    transition: left 0.3s cubic-bezier(0.22, 1, 0.36, 1), top 0.3s cubic-bezier(0.22, 1, 0.36, 1), background-color 0.2s ease;
     user-select: none;
     -webkit-user-select: none;
     touch-action: none;
+    z-index: 9999;
 }
 
 #noBtn:hover {
